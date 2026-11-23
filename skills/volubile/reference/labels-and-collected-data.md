@@ -9,7 +9,7 @@ A classifier puts one label on a call, such as the reason for the call or how it
 - **A classifier has a name, one short description and a list of labels.** The description is one sentence of under 200 characters starting with a verb ("Classifies the reason for the call."). It holds no label definitions.
 - **Each label has its own name and description.** The description says what can be seen in the call, in one or two sentences, with synonyms and edge cases.
 - **Always add a catch-all label** ("Other calls") with a description like "Any call that fits no other label of this classifier."
-- **Names carry no special characters**: no apostrophe, quotation mark, parenthesis or symbol. "Call reason" rather than "Reason for the call".
+- **Names use letters, digits, spaces and `. - [ ] ( )`**. Classifier and label names also accept an apostrophe. Quotation marks and other symbols are refused.
 - **No label appears twice**, inside a classifier or across the agent's classifiers. Names are compared without regard to upper or lower case.
 - **Two classifiers exist on every agent**, about how the call ended and how satisfied the customer was (read their exact names with `get_agent_post_processing`). Do not create another one for the same idea: adapt its labels.
 - **A post-call email is triggered by labels of one classifier**, any of them (an OR). It cannot require a label of one classifier AND a label of another. When an outcome needs a combination, make it one label of one classifier.

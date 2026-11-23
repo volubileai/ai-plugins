@@ -20,7 +20,7 @@ A tool the user's role or plan does not allow is missing from the tool list. A V
 
 `create_webhook_action` can be listed on a plan without integrations. It then answers with a refusal sentence: relay it as it is.
 
-Steps that need a Volubile admin do not have a tool here (activating or deactivating an agent, test scenarios). Send the user to the Volubile app or to https://support.volubile.ai.
+Two things have no tool here. Activating or deactivating an agent is done in the Volubile app, in the agent's settings, by an Admin of the workspace (an Editor cannot). Test scenarios are not available to workspace users. Send the user to the Volubile app or to https://support.volubile.ai.
 
 ## What each write does
 

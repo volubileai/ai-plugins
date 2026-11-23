@@ -20,7 +20,7 @@ Use `list_live_call_action_types` to see the types that can be created and the s
 
 - A standard agent has at most one `HANG_UP`, one `WAIT` and one `DTMF`. Change the existing one with `update_live_call_action`.
 - A new action is created switched off. The user switches it on in the Volubile app. Say so in the hand-over.
-- A transfer created without opening hours has every day empty, so it is probably never offered. Ask for the days and the hours (`HH:mm`, end after start, two time ranges per day at most) and put them in.
+- A transfer with no time range on any day is always available. As soon as one day has a range, every other day is closed. Ask for the days and the hours (`HH:mm`, end after start, two time ranges per day at most) and put them in, for the action and for each destination.
 - Phone numbers are in international format, like `+33612345678`. A transfer over a phone connection (SIP) can only use a connection that already exists in the workspace.
 - The agent speaks before running some actions (transfer, hang up, knowledge search, workflow) unless `answerBeforeExecution` is `false`. Set it to `false` when the action should run without an introduction.
 - Test an action with a real call before relying on it.

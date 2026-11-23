@@ -35,7 +35,7 @@ Use a List step instead of a knowledge search for exact matches. A List step nev
 ## Rules for writing the graph
 
 - The first step is a Say step with the greeting. It is linked to the main step by a direct transition. The agent's own greeting field is not used by a flow agent.
-- A transition leaving a Prompt step is an LLM transition, with a name and a condition prompt. A transition leaving any other step is direct or a logic condition. The tool refuses the other combinations.
+- A transition leaving a Prompt step is an LLM transition, with a name and a condition prompt. A transition leaving a Router, Say or Transfer step is direct or a logic condition. A List or Transfer list step accepts only a direct transition: it always follows its first one. The tool refuses the other combinations.
 - A step has only one direct transition leaving it.
 - Name every transition: the name is its label in the app.
 - The start step and the main step must be active. A router needs at least one transition leaving it.
@@ -47,4 +47,4 @@ Use a List step instead of a knowledge search for exact matches. A List step nev
 
 ## Writing
 
-`edit_truepath` takes a list of operations applied all together, and saves one draft. Its description lists the operations and their fields: follow it. Read the graph first with `get_agent_truepath`, and read a step with `get_truepath_node`. Change only a step's prompt with `updateNodePrompt`. The user publishes the draft in the Volubile app.
+`edit_truepath` takes a list of operations applied all together, and saves one draft. Its description lists the operations and their fields: follow it. Read the graph first with `get_agent_truepath`, and read a step with `get_truepath_node`. To change part of a step's prompt or of an LLM transition's prompt, use `editPrompt` with text replacements: it sends only the text that changes. `updateNodePrompt` rewrites a whole step prompt. The user publishes the draft in the Volubile app.
