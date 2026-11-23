@@ -27,4 +27,4 @@ This repository is public. Everything in it is published in the Claude directory
 - `.mcp.json`: the server both manifests point at.
 - `skills/volubile/`: the skill, written for customers (Admin, Editor or Viewer of a Volubile workspace).
 
-Raise `version` in both manifests on every release.
+Raise `version` in `.claude-plugin/plugin.json`, `.codex-plugin/plugin.json` and `metadata.version` in `skills/volubile/SKILL.md` on every release.
