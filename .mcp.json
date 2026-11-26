@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "volubile": {
+      "type": "http",
+      "url": "https://mcp.volubile.ai/v1/mcp"
+    }
+  }
+}

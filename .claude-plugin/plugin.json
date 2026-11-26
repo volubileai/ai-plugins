@@ -1,0 +1,15 @@
+{
+  "name": "volubile",
+  "displayName": "Volubile",
+  "version": "0.1.0",
+  "description": "Inspect calls and manage your Volubile voice agents from Claude: call logs, prompts, actions and knowledge sources.",
+  "author": {
+    "name": "Volubile",
+    "url": "https://volubile.ai"
+  },
+  "homepage": "https://volubile.ai",
+  "repository": "https://github.com/volubileai/ai-plugins",
+  "license": "MIT",
+  "supportUrl": "https://support.volubile.ai",
+  "privacyPolicyUrl": "https://volubile.ai/legals#data-protection"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "volubile",
+  "version": "0.1.0",
+  "description": "Inspect calls and manage your Volubile voice agents: call logs, prompts, actions and knowledge sources.",
+  "author": {
+    "name": "Volubile",
+    "url": "https://volubile.ai"
+  },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Volubile",
+    "shortDescription": "Manage your voice agents",
+    "longDescription": "Connect your Volubile account to review calls and manage your voice agents. Read call transcripts and event logs, count calls, and, depending on your role, read and edit agent prompts, actions and settings. Each operator signs in with their own Volubile account and keeps the same permissions as in the Volubile app.",
+    "developerName": "Volubile",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png",
+    "websiteURL": "https://volubile.ai",
+    "supportURL": "https://support.volubile.ai",
+    "privacyPolicyURL": "https://volubile.ai/legals#data-protection",
+    "termsOfServiceURL": "https://volubile.blob.core.windows.net/volubile/documents/cgu_cgv_volubile_fr.pdf",
+    "defaultPrompt": [
+      "List my agent's calls from yesterday and flag the ones that went wrong.",
+      "Show me the prompt of my agent and suggest improvements."
+    ]
+  }
+}
