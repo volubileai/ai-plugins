@@ -5,7 +5,7 @@ This repository is public. Everything in it is published in the Claude directory
 ## Never commit
 
 - A secret: API key, token, password, client secret, private key, connection string, `.env` file, test account credentials.
-- An internal address: only `https://cts.eu.volubile.ai/v1/mcp` and the public `volubile.ai` pages may appear. No preprod, localhost or internal host.
+- An internal address: only `https://mcp.volubile.ai/v1/mcp` and the public `volubile.ai` pages may appear. No preprod, localhost or internal host.
 - Customer data: customer or agent names, IDs, phone numbers, emails, transcripts or any call content, even as an example.
 - Internal material: staff names or emails, internal tools and processes, ticket links, anything written for Volubile staff rather than for customers.
 

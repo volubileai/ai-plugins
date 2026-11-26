@@ -32,7 +32,7 @@ Some tools depend on the options of your plan, for example integrations. A tool 
 
 ## Data
 
-The package contains text files only and runs no code on your machine. The assistant sends your requests to the Volubile server at `https://cts.eu.volubile.ai/v1/mcp`, and nothing is sent anywhere else. Call data, including transcripts, stays in your Volubile account and is returned to the conversation only when you ask for it.
+The package contains text files only and runs no code on your machine. The assistant sends your requests to the Volubile server at `https://mcp.volubile.ai/v1/mcp`, and nothing is sent anywhere else. Call data, including transcripts, stays in your Volubile account and is returned to the conversation only when you ask for it.
 
 ## Support
 

@@ -2,7 +2,7 @@
   "mcpServers": {
     "volubile": {
       "type": "http",
-      "url": "https://cts.eu.volubile.ai/v1/mcp"
+      "url": "https://mcp.volubile.ai/v1/mcp"
     }
   }
 }

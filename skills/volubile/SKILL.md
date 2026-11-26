@@ -2,7 +2,7 @@
 name: volubile
 description: Review calls and build or change Volubile voice agents through the Volubile connector. Use when the user mentions Volubile, their voice agent or phone agent, calls the agent received, or wants to create an agent or change its prompt, voice, greeting, transfers, post-call email, call labels, extracted data or integrations.
 license: MIT
-compatibility: Needs the Volubile MCP connector (https://cts.eu.volubile.ai/v1/mcp), signed in with the user's own Volubile account. Which tools exist depends on the user's role and plan.
+compatibility: Needs the Volubile MCP connector (https://mcp.volubile.ai/v1/mcp), signed in with the user's own Volubile account. Which tools exist depends on the user's role and plan.
 metadata:
   author: Volubile
   version: "0.1.0"
